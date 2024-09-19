@@ -53,7 +53,7 @@
                         <form class="form update-form" action="" method="POST">
                             {% csrf_token %}
                             <div class="form-group">
-                                <div class="input-group input-group-{{ product.id }}">
+                                <div class="input-group input-group-{{ item.item_id }}">
                                     <div class="input-group-prepend">
                                         <button
                                             class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.item_id }}"
