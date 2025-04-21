@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: boutique-ado
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn boutique_ado.wsgi:application
